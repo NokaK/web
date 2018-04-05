@@ -1,0 +1,36 @@
+
+/*==== first section ====*/
+
+.bg1{
+	background-image: url(../images/1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 766px;
+}
+.bg2{
+	background-color: rgba(0,0,0,0.6);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 766px;
+}
+.main-container{
+	width: 100%;
+	max-width:1170px;
+	margin:0 auto;
+}
+.header-box{
+	font-size: 13px;
+	font-family: 
+}
+.fa-phone{
+	color: #ffcf40;
+	transform: rotate(-260deg);
+	font-size: 13px;
+}
+
+
+
+
+/*==== first section ====*/
