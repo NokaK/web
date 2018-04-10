@@ -1,0 +1,12 @@
+@font-face{
+    font-family:BPG Guardian Egyp-Caps;
+    src:  url('../fonts/BPGGuardianEgyp-Caps.woff') format('woff');
+}
+@font-face{
+    font-family:BPG Guardian Egyp-Caps Bld;
+    src:  url('../fonts/BPGGuardianEgyp-Caps Bld.woff') format('woff');
+}
+@font-face{
+    font-family:BPG Guardian Egyp;
+    src:  url('../fonts/BPGGuardianEgyp.woff') format('woff');
+}
