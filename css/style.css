@@ -392,5 +392,12 @@ h6{
     bottom: 0;
 }
 
+.slick-active{
+   opacity: 0.5;
+}
+
+.slick-current{
+   opacity: 1;
+}
 
 /* ==== footer ====*/
