@@ -1,6 +1,7 @@
 ol, ul {
     list-style: none;
 }
+
 body{
     overflow-x: hidden;
 }
@@ -54,12 +55,12 @@ body{
 }
 
 
+
 .hr{
-	background-color: #fff;
-	opacity: 0.4;
+    background-color: #fff;
+    opacity: 0.4;
 
 }
-
 .navbar{
 	white-space: nowrap;
 	font-size: 15px;
@@ -126,7 +127,7 @@ h1{
 .rooms-main-text{
     font-family:BPG Guardian Egyp-Caps Bld;
     letter-spacing: 1.2px;
-    font-size:40pt;
+    font-size:30pt;
 }
 .hr-section{
     width: 173px;
@@ -229,6 +230,25 @@ h4{
     background-position: center;
     height: 787px;
 }
+.service1:after,.service2:after,.service3:after,.service4:after{
+    content : "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000000; 
+    width: 100%;
+    height: 100%;
+    opacity : 0.7;
+    z-index: 10;
+     transition: 2s;
+}
+
+.service1:hover:after,.service2:hover:after,.service3:hover:after,.service4:hover:after{
+        cursor: pointer;
+        opacity:0;
+        transition: 2s;
+}
 .service2{
     background-image: url(../images/5.jpg);
     background-repeat: no-repeat;
@@ -250,7 +270,12 @@ h4{
     background-position: center;
     height: 787px;
 }
-
+.service-box{
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+}
 .box11{
 
      height: 41.25px;
@@ -301,3 +326,71 @@ h4{
 }
 
 /*==== service section ====*/
+
+/*==== bar  restaurant section ====*/
+.viewmore a{
+    font-family: BPG Guardian Egyp-Caps;
+    color:#6c757d;
+    text-decoration: none;
+}
+.arrow-item{
+    color: #ffcf40!important;
+}
+.viewmore:hover a{
+    color: #000000;
+}
+.back-box{
+    background-color:  #212121;
+    height: 570px;
+    width: 420px;
+}
+.front-box{
+    top:8%;
+    left:8%;
+
+}
+
+/*==== bar  restaurant section ====*/
+ 
+
+/* ==== footer ====*/
+footer{
+    background-color: #212121;
+    color: #ffffff;
+}
+.footer-list{
+    white-space:nowrap;
+    color:#686868;
+}
+.footer-text1{
+     font-family: BPG Guardian Egyp;
+     font-size: 13px;
+     color:#686868;
+     line-height: 1.6;
+}
+.footer-text{
+     font-family: BPG Guardian Egyp;
+     font-size: 13px;
+     color:#686868;
+     line-height: 1.6;
+     display: block;
+}
+.footer-text:hover{
+    color: #ffffff;
+    text-decoration: none;
+}
+h6{
+    font-family:BPG Guardian Egyp-Caps;
+    font-size: 16px;
+
+}
+.yellow-box{
+    background-color:#ffcf40;
+    max-width: 1350px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+
+
+/* ==== footer ====*/
