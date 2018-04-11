@@ -2,6 +2,7 @@ $('.center').slick({
   centerMode: true,
   centerPadding: '60x',
   slidesToShow: 3,
+  arrows: true,
   responsive: [
     {
       breakpoint: 768,
