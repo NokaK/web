@@ -23,7 +23,7 @@
     line-height: 0;
 
     position: absolute;
-    top: 50%;
+    top: 25%;
 
     display: block;
 
@@ -35,8 +35,7 @@
     transform: translate(0, -50%);
 
     cursor: pointer;
-
-    color: transparent;
+    z-index: 10;
     border: none;
     outline: none;
     background: transparent;
@@ -79,11 +78,11 @@
 
 .slick-prev
 {
-    left: -25px;
+    left: 135px;
 }
 [dir='rtl'] .slick-prev
 {
-    right: -25px;
+    right: 0px;
     left: auto;
 }
 .slick-prev:before
@@ -97,12 +96,12 @@
 
 .slick-next
 {
-    right: -25px;
+    right: 135px;
 }
 [dir='rtl'] .slick-next
-{
+{ 
     right: auto;
-    left: -25px;
+    left: 0px;
 }
 .slick-next:before
 {
