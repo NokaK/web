@@ -76,7 +76,7 @@ h1{
      height: 83px;
      width: 121px;
      padding:5px;
-     margin: 0px auto;
+     margin: 25px auto;
   background:
     linear-gradient(to left, #9c782b 100%, transparent 0%) top left no-repeat,
     linear-gradient(to left, #9c782b 0%, transparent 0%) bottom left no-repeat,
@@ -88,7 +88,7 @@ h1{
      height: 83px;
      width: 112px;
      padding:5px;
-     margin: 0 auto;
+     margin: 25 auto;
   background:
     linear-gradient(to left, #f5ae16 100%, transparent 0%) top left no-repeat,
     linear-gradient(to left, #f5ae16 0%, transparent 0%) bottom left no-repeat,
@@ -422,8 +422,20 @@ h6{
 /* ==== footer ====*/
 
 /*=== media ====*/
-
-@media (max-width: 1125px){
+@media (max-width: 1200px){
+    
+}
+@media (max-width: 1025px){
+   
+    h1{
+        font-size: 40px;
+    }
+    .box1{
+        margin:200px auto;
+    }
+    .rooms-main-text{
+        font-size: 30px
+    }
     .rooms-box{
     width: 450px;
     overflow: hidden;
@@ -432,11 +444,21 @@ h6{
     max-width: 1000px;
 
     }
-
-
 }
 
 @media (max-width: 990px){
+     .navbar1{
+        display: none;
+    }
+
+     .navbar-expand-lg{
+        position: fixed;
+        padding-bottom: 20px;
+        z-index: 999;
+    }
+    .navbar-collapse {
+        background-color: rgba(245,174,22,0.3);
+    }
      .service1,.service2,.service3,.service4{
         height: 330px;
     }
