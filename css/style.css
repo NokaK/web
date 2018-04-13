@@ -21,7 +21,9 @@ body{
 	background-position: center;
 	height: 766px;
 }
-
+.margins{
+     margin: 0 10px;
+}
 .navbar1{
 	font-size: 13px;
 }
@@ -40,13 +42,22 @@ body{
 .logo{
 	width: 120px;
 }
+.logo1{
+    display: none;
+    width: 120px;
+}
+.info1{
+    display:none;
+}
 .geobox{
+    cursor: pointer;
      height:35px;
      width: 50px;
-     padding:8px;
+     padding:12px;
      font-size: 11px;
-  
-  background:
+     text-decoration: none;
+     color: #ffffff;
+    background:
     linear-gradient(to left, #9aa2a7 100%, transparent 0%) top left no-repeat,
     linear-gradient(to left,  #9aa2a7 100%, transparent 0%) bottom left no-repeat,
     linear-gradient(to top, #9aa2a7 15%, transparent 0%, transparent 85%, #9aa2a7 0%) top left no-repeat,
@@ -54,17 +65,26 @@ body{
   background-size: 100% 1px, 100% 1px, 1px 100%, 1px 100%;
 }
 
-
-
 .hr{
     background-color: #fff;
     opacity: 0.4;
-
+}
+.hr1{
+    background-color: #fff;
+    opacity: 0.4;
+    display:none;
 }
 .navbar{
 	white-space: nowrap;
 	font-size: 15px;
 	font-family:BPG Guardian Egyp-Caps;
+}
+.navbar-nav a:hover{
+    color:#ffcf40!important;
+}
+
+.info1{
+    display: none;
 }
 h1{
 	font-family:BPG Guardian Egyp-Caps;
@@ -194,11 +214,10 @@ h1{
     width: 100%!important;
    margin:0 15px!important;
 }
-.slick-next{
-}
+
 .rooms-box{
     position: absolute;
-    top: 52%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     background-color: #ffffff;
@@ -263,9 +282,9 @@ h4{
      transition: 2s;
 }
 .service1:hover:after,.service2:hover:after,.service3:hover:after,.service4:hover:after{
-        cursor: pointer;
-        opacity:0;
-        transition: 2s;
+    cursor: pointer;
+    opacity:0;
+    transition: 2s;
 }
 .service2{
     background-image: url(../images/5.jpg);
@@ -423,41 +442,65 @@ h6{
 
 /*=== media ====*/
 @media (max-width: 1200px){
-    
+    .margins{
+        margin: 0px;
+    }
+    .geobox{
+        display: none;
+    }
+    .info{
+        font-size: 10px;
+    }
 }
 @media (max-width: 1025px){
-   
-    h1{
-        font-size: 40px;
-    }
-    .box1{
-        margin:200px auto;
-    }
+   .bg1, .bg2{
+    height: 600px;
+   }
     .rooms-main-text{
         font-size: 30px
     }
     .rooms-box{
-    width: 450px;
-    overflow: hidden;
+        max-width: 570px;
+        width: 100%;
+        overflow: hidden;
+        border-top: 3px solid #000000;
     }
     .yellow-box{
-    max-width: 1000px;
+        max-width: 1000px;
 
     }
 }
 
 @media (max-width: 990px){
+
      .navbar1{
         display: none;
     }
 
      .navbar-expand-lg{
         position: fixed;
-        padding-bottom: 20px;
         z-index: 999;
     }
-    .navbar-collapse {
+    .nav-link .logo1{
+        display: inline-block;
+    }
+    .info1{
+        display:block;
+    }
+    .navbar-toggler{
+        display: inline-block;
+    }
+    .hr1{
+        display: block;
+    }
+    /*.navbar-collapse {
         background-color: rgba(245,174,22,0.3);
+    }*/
+    h1{
+        font-size: 40px;
+    }
+    .box1{
+        margin:200px auto;
     }
      .service1,.service2,.service3,.service4{
         height: 330px;
@@ -488,7 +531,7 @@ h6{
         margin-bottom: 15px;
     }
     .front-box{
-    top: 15%;
-    left: 0%;
+        top: 15%;
+        left: 0%;
     }
 }
