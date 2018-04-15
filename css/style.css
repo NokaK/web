@@ -130,7 +130,7 @@ h1{
 }
 .box4{
      height: 48px;
-     width: 112px;
+       width: 112px;
      padding:5px;
      margin: -10px auto;
   background:
@@ -177,7 +177,31 @@ h1{
     height:600px; 
 }
 .film_roll_wrapper{
-    height: 800px!important;
+    height: 600px!important;
+}
+.roll{
+    background-image: url(../images/3.jpg);
+    height: 650px;
+    width: 1000px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.roll1{
+    background-image: url(../images/2.jpg);
+    height: 650px;
+    width: 1000px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.roll2{
+    background-image: url(../images/4.jpg);
+    height: 650px;
+    width: 1000px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 .film_roll_pager{
     display: none!important;
@@ -188,19 +212,18 @@ h1{
 .film_roll_child.active{
     opacity: 1;
 }
-/*.film_roll_prev, .film_roll_next{
-    position: absolute;
-    top: 50%;
-    font-size: 60px;
-    font-weight: 100;
-    line-height: 30px;
-    color:#000000;
-}*/
+.film_roll_prev, .film_roll_next{
+   background: transparent!important;
+   border-radius:0px!important;
+   border:none!important;
+   color:#000000!important;
+}
 .slider-image img{
     max-width:1000px;
     width: 100%;
 }
 .rooms-box{
+    height: 300px;
     position: absolute;
     top: 100%;
     left: 50%;
@@ -209,6 +232,15 @@ h1{
     box-shadow: 0px 0px 30px -4px #000000;
     border-bottom: 3px solid #000000;
     z-index: 12;
+   
+}
+.rooms-box1{
+    display: none;
+     background-color: #ffffff;
+      box-shadow: 0px 0px 30px -4px #000000;
+    border-bottom: 3px solid #000000;
+
+
 }
 .hr-section2{
     width: 31px;  
@@ -238,20 +270,48 @@ h4{
 }
 .rooms-text{
     font-family: BPG Guardian Egyp;
+    color: #6c757d;
 }
 /*=== rooms section1 ====*/
 
 /*==== service section ====*/
+.row {
+    margin-left:0px!important;
+    margin-right: 0px!important;
+}
 .service1{
     background-image: url(../images/8.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 787px;
+    cursor: pointer;
 }
-.row {
-    margin-left:0px!important;
-    margin-right: 0px!important;
+
+
+.service2{
+    background-image: url(../images/5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 787px;
+    cursor: pointer;
+}
+.service3{
+    background-image: url(../images/7.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 787px;
+    cursor: pointer;
+}
+.service4{
+    background-image: url(../images/6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 787px;
+    cursor: pointer;
 }
 .service1:after,.service2:after,.service3:after,.service4:after{
     content : "";
@@ -271,28 +331,6 @@ h4{
     opacity:0;
     transition: 2s;
 }
-.service2{
-    background-image: url(../images/5.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 787px;
-}
-.service3{
-    background-image: url(../images/7.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 787px;
-}
-.service4{
-    background-image: url(../images/6.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 787px;
-}
-
 .service-box{
      position: absolute;
      top: 50%;
@@ -489,9 +527,7 @@ h6{
     .hr1{
         display: block;
     }
-    /*.navbar-collapse {
-        background-color: rgba(245,174,22,0.3);
-    }*/
+
     h1{
         font-size: 40px;
     }
@@ -500,6 +536,10 @@ h6{
     }
      .service1,.service2,.service3,.service4{
         height: 330px;
+    }
+    .roll, .roll1, .roll2 {
+        width: 800px;
+        height: 500px;
     }
     .back-box{
         height: 370px;
@@ -521,7 +561,7 @@ h6{
         font-size: 9px;
     }
 }
-@media (max-width: 770px){
+@media (max-width: 767px){
     .back-box{
         background-color: #ffffff;
         margin-bottom: 15px;
@@ -530,10 +570,19 @@ h6{
         top: 15%;
         left: 0%;
     }
-    
-}
-@media (max-width: 375px){
-    .service1:after, .service2:after, .service3:after, .service4:after{
+    .rooms-box {
        display: none;
     }
+    .rooms-box1{
+        display: block;
+        height: 360px;
+    }
+    #film_roll{
+        height:472px; 
+    }
+     .service1:after, .service2:after, .service3:after, .service4:after{
+       display: none;
+    }
+
+    
 }
