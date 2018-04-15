@@ -454,11 +454,15 @@ h6{
 }
 .yellow-box{
     background-color:#ffcf40;
-    max-width: 1250px;
+    max-width: 1244px;
     width: 100%;
     left: 0;
     bottom: 0;
 }
+.smartweb{
+    width: 80px;
+}
+
 
 
 /* ==== footer ====*/
